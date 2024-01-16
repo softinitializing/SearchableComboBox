@@ -23,7 +23,7 @@ namespace SearchableComboBox
         public MainWindow()
         {
             Strings.Add("Adam");
-            AddRandomNames(10000);
+            AddRandomNames(100);
             InitializeComponent();
             DataContext = this;
         }
