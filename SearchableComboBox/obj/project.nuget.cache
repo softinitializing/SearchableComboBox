@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "G1atuK/YwOe52kxkM78PH06eckCq1DcajlsDv3B23zudBzixOesGBIjf34eac7VX3K4Tb8egeUp3n0nQCuMbmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ahmed\\source\\repos\\SearchableComboBox\\SearchableComboBox\\SearchableComboBox.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ahmed\\.nuget\\packages\\sharpvectors\\1.8.3\\sharpvectors.1.8.3.nupkg.sha512",
+    "C:\\Users\\Ahmed\\.nuget\\packages\\sharpvectors.reloaded\\1.8.3\\sharpvectors.reloaded.1.8.3.nupkg.sha512",
+    "C:\\Users\\Ahmed\\.nuget\\packages\\sharpvectors.wpf\\1.8.3\\sharpvectors.wpf.1.8.3.nupkg.sha512"
+  ],
+  "logs": []
+}
