@@ -169,6 +169,81 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "Syncfusion.Licensing/24.1.47": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.SfInput.WPF/24.1.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47",
+          "Syncfusion.Shared.WPF": "24.1.47"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SfSkinManager.WPF/24.1.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/24.1.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Themes.Windows11Dark.WPF/24.1.47": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47",
+          "Syncfusion.SfSkinManager.WPF": "24.1.47"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Windows11Dark.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Windows11Dark.WPF.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -628,19 +703,185 @@
         "sharpvectors.wpf.1.8.3.nupkg.sha512",
         "sharpvectors.wpf.nuspec"
       ]
+    },
+    "Syncfusion.Licensing/24.1.47": {
+      "sha512": "umuqKtsQnq//31JrKfQBpPofNZC1pYF5wwcNSf+mCIrf9BC+AP4UgYUtb2ntTlLaDjZsDNSsZdV22QxtNBE63w==",
+      "type": "package",
+      "path": "syncfusion.licensing/24.1.47",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/net7.0/Syncfusion.Licensing.dll",
+        "lib/net8.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.24.1.47.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.SfInput.WPF/24.1.47": {
+      "sha512": "GSbLaXzbYtx8srItmyeSIDOsMKhfR8dav848rkps6ifDIwdaul9BmbK8hUGIW/UCoksTIx4Pi+O7lOQVMA5ajw==",
+      "type": "package",
+      "path": "syncfusion.sfinput.wpf/24.1.47",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Syncfusion.SfInput.WPF.dll",
+        "lib/net40/Syncfusion.SfInput.WPF.xml",
+        "lib/net45/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net45/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net45/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net45/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net45/Syncfusion.SfInput.WPF.dll",
+        "lib/net45/Syncfusion.SfInput.WPF.xml",
+        "lib/net451/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net451/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net451/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net451/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net451/Syncfusion.SfInput.WPF.dll",
+        "lib/net451/Syncfusion.SfInput.WPF.xml",
+        "lib/net46/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net46/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net46/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net46/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net46/Syncfusion.SfInput.WPF.dll",
+        "lib/net46/Syncfusion.SfInput.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.xml",
+        "syncfusion.sfinput.wpf.24.1.47.nupkg.sha512",
+        "syncfusion.sfinput.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.SfSkinManager.WPF/24.1.47": {
+      "sha512": "wnsZ8LgDJ3MXRS13V3EXXIqyGI6N4KGsAp9tN7HTkTxySIPEKcS6m0JrEW81gOPYykLDk4FjaoI+TKOyanTCVA==",
+      "type": "package",
+      "path": "syncfusion.sfskinmanager.wpf/24.1.47",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net45/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net45/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net451/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net451/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net46/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net46/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.xml",
+        "syncfusion.sfskinmanager.wpf.24.1.47.nupkg.sha512",
+        "syncfusion.sfskinmanager.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Shared.WPF/24.1.47": {
+      "sha512": "58il67XMcN9uYghOuXEle/OQL3y/6sV84XmpwQSpbpDwBFiFart0AluGPTp8yXlTJzmgFehVp3TlGxrVdB0VTw==",
+      "type": "package",
+      "path": "syncfusion.shared.wpf/24.1.47",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net40/Syncfusion.Shared.WPF.dll",
+        "lib/net40/Syncfusion.Shared.WPF.xml",
+        "lib/net45/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net45/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net45/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net45/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net45/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net45/Syncfusion.Shared.WPF.dll",
+        "lib/net45/Syncfusion.Shared.WPF.xml",
+        "lib/net451/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net451/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net451/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net451/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net451/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net451/Syncfusion.Shared.WPF.dll",
+        "lib/net451/Syncfusion.Shared.WPF.xml",
+        "lib/net46/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net46/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net46/Design/Syncfusion.Shared.Wpf.Expression.Design.dll",
+        "lib/net46/Design/Syncfusion.Shared.Wpf.VisualStudio.Design.dll",
+        "lib/net46/Design/Syncfusion.Shared.Wpf.dll.Design.dll",
+        "lib/net46/Syncfusion.Shared.WPF.dll",
+        "lib/net46/Syncfusion.Shared.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.xml",
+        "syncfusion.shared.wpf.24.1.47.nupkg.sha512",
+        "syncfusion.shared.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.Themes.Windows11Dark.WPF/24.1.47": {
+      "sha512": "wsWyzyz7Aj4L0T9PrrXqMPxO3Tr2+7ve6mXpI20u9Rcj1sTUR6eTH9YsGU0Wivc4yEf5dkpo8E6pqnQUNutrQg==",
+      "type": "package",
+      "path": "syncfusion.themes.windows11dark.wpf/24.1.47",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net45/Syncfusion.Themes.Windows11Dark.WPF.dll",
+        "lib/net45/Syncfusion.Themes.Windows11Dark.WPF.xml",
+        "lib/net451/Syncfusion.Themes.Windows11Dark.WPF.dll",
+        "lib/net451/Syncfusion.Themes.Windows11Dark.WPF.xml",
+        "lib/net46/Syncfusion.Themes.Windows11Dark.WPF.dll",
+        "lib/net46/Syncfusion.Themes.Windows11Dark.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Windows11Dark.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Windows11Dark.WPF.xml",
+        "syncfusion.themes.windows11dark.wpf.24.1.47.nupkg.sha512",
+        "syncfusion.themes.windows11dark.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "SharpVectors >= 1.8.3",
       "SharpVectors.Reloaded >= 1.8.3",
-      "SharpVectors.Wpf >= 1.8.3"
+      "SharpVectors.Wpf >= 1.8.3",
+      "Syncfusion.SfInput.WPF >= 24.1.47",
+      "Syncfusion.SfSkinManager.WPF >= 24.1.47",
+      "Syncfusion.Shared.WPF >= 24.1.47",
+      "Syncfusion.Themes.Windows11Dark.WPF >= 24.1.47"
     ]
   },
   "packageFolders": {
     "C:\\Users\\Ahmed\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\23.1.36\\ToolboxNuGetPackages": {}
+    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\24.1.41\\ToolboxNuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -653,7 +894,7 @@
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\23.1.36\\ToolboxNuGetPackages"
+        "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\24.1.41\\ToolboxNuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -696,6 +937,22 @@
           "SharpVectors.Wpf": {
             "target": "Package",
             "version": "[1.8.3, )"
+          },
+          "Syncfusion.SfInput.WPF": {
+            "target": "Package",
+            "version": "[24.1.47, )"
+          },
+          "Syncfusion.SfSkinManager.WPF": {
+            "target": "Package",
+            "version": "[24.1.47, )"
+          },
+          "Syncfusion.Shared.WPF": {
+            "target": "Package",
+            "version": "[24.1.47, )"
+          },
+          "Syncfusion.Themes.Windows11Dark.WPF": {
+            "target": "Package",
+            "version": "[24.1.47, )"
           }
         },
         "imports": [

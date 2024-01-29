@@ -6,9 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:SearchableComboBox"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
     Title="MainWindow"
     Width="300"
     Height="450"
+    syncfusionskin:SfSkinManager.VisualStyle="Windows11Dark"
     mc:Ignorable="d">
     <Grid Background="#FF646464">
 
@@ -18,8 +21,11 @@
             Margin="20,101,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            Background="#FF303030"
+            Foreground="White"
             ItemsSource="{Binding Strings}" />
-        <TextBox x:Name="itemcount"
+        <TextBox
+            x:Name="itemcount"
             Width="65"
             Margin="85,70,0,0"
             HorizontalAlignment="Left"
@@ -31,17 +37,22 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Item Count" />
-        <Button x:Name="applycount"
+        <Button
+            x:Name="applycount"
             Margin="155,70,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Content="Apply" Click="applycount_Click" />
-        <ProgressBar x:Name="pbar"
+            Click="applycount_Click"
+            Content="Apply" />
+        <ProgressBar
+            x:Name="pbar"
             Width="64"
             Height="10"
             Margin="195,75,0,0"
             HorizontalAlignment="Left"
-            VerticalAlignment="Top" IsIndeterminate="True" Visibility="Collapsed"/>
+            VerticalAlignment="Top"
+            IsIndeterminate="True"
+            Visibility="Collapsed" />
 
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
 ﻿
+using Syncfusion.Windows.Controls.Input;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -12,19 +13,34 @@ namespace MyDialogs.MyControls
 {
     public class SearchableComboBox : ComboBox
     {
-
         static SearchableComboBox()
         {
 
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(SearchableComboBox), new FrameworkPropertyMetadata(typeof(ComboBox)));
         }
-       
+        public SearchableComboBox()
+        {
+            this.Unloaded += SearchableComboBox_Unloaded;
+        }
+
+        private void SearchableComboBox_Unloaded(object sender, RoutedEventArgs e)
+        {
+            // Find the template parts and apply the events
+            if (GetTemplateChild("SearchBox") is SfTextBoxExt filterbox)
+            {
+                filterbox.TextChanged -= SearchBox_TextChanged;
+            }
+            if (GetTemplateChild("RootBorder") is Border border)
+            {
+                border.MouseUp -= RootBorder_MouseUp;
+            }
+        }
+
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
 
             // Find the template parts and apply the events
-            if (GetTemplateChild("SearchBox") is TextBox filterbox)
+            if (GetTemplateChild("SearchBox") is SfTextBoxExt filterbox)
             {
                 filterbox.TextChanged += SearchBox_TextChanged;
             }
@@ -33,15 +49,10 @@ namespace MyDialogs.MyControls
                 border.MouseUp += RootBorder_MouseUp;
             }
 
-            // Set the custom template
             ApplyTemplate();
             Style template = FindResource("SearchableComboBoxTemplateStyle") as Style;
             Style = template;
-            ItemsPanel = new ItemsPanelTemplate();
-            var stackPanelTemplate = new FrameworkElementFactory(typeof(VirtualizingStackPanel));
-            ItemsPanel.VisualTree = stackPanelTemplate;
-
-
+           
 
         }
 
@@ -49,6 +60,9 @@ namespace MyDialogs.MyControls
         {
             if (sender is TextBox searchBox)
             {
+                // Save the current focus
+                IInputElement focusedElement = FocusManager.GetFocusedElement(this);
+
                 CollectionView itemsViewOriginal = (CollectionView)CollectionViewSource.GetDefaultView(this.ItemsSource);
 
                 itemsViewOriginal.Filter = ((o) =>
@@ -65,8 +79,15 @@ namespace MyDialogs.MyControls
                 });
 
                 itemsViewOriginal.Refresh();
+
+                // Restore the focus after refresh
+                if (focusedElement != null && focusedElement is IInputElement)
+                {
+                    ((IInputElement)focusedElement).Focus();
+                }
             }
         }
+
 
         private void RootBorder_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -80,6 +101,16 @@ namespace MyDialogs.MyControls
                         {
                             toggle.IsChecked = !toggle.IsChecked;
                         }
+                    }
+                }
+            }
+            if (sender is Grid rgrid)
+            {
+                foreach (var child in rgrid.Children)
+                {
+                    if (child is ToggleButton toggle)
+                    {
+                        toggle.IsChecked = !toggle.IsChecked;
                     }
                 }
             }

@@ -31,3 +31,9 @@ C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\obj\Debug\net8
 C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\obj\Debug\net8.0-windows\SearchableComboBox.pdb
 C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\obj\Debug\net8.0-windows\SearchableComboBox.genruntimeconfig.cache
 C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\obj\Debug\net8.0-windows\ref\SearchableComboBox.dll
+C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\obj\Debug\net8.0-windows\SearchableComboBox.sourcelink.json
+C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\bin\Debug\net8.0-windows\Syncfusion.Licensing.dll
+C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\bin\Debug\net8.0-windows\Syncfusion.SfInput.WPF.dll
+C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\bin\Debug\net8.0-windows\Syncfusion.SfSkinManager.WPF.dll
+C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\bin\Debug\net8.0-windows\Syncfusion.Shared.WPF.dll
+C:\Users\Ahmed\source\repos\SearchableComboBox\SearchableComboBox\bin\Debug\net8.0-windows\Syncfusion.Themes.Windows11Dark.WPF.dll

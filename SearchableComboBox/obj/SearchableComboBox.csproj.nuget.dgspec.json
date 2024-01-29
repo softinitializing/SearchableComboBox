@@ -15,7 +15,7 @@
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\23.1.36\\ToolboxNuGetPackages"
+          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\24.1.41\\ToolboxNuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,6 +58,22 @@
             "SharpVectors.Wpf": {
               "target": "Package",
               "version": "[1.8.3, )"
+            },
+            "Syncfusion.SfInput.WPF": {
+              "target": "Package",
+              "version": "[24.1.47, )"
+            },
+            "Syncfusion.SfSkinManager.WPF": {
+              "target": "Package",
+              "version": "[24.1.47, )"
+            },
+            "Syncfusion.Shared.WPF": {
+              "target": "Package",
+              "version": "[24.1.47, )"
+            },
+            "Syncfusion.Themes.Windows11Dark.WPF": {
+              "target": "Package",
+              "version": "[24.1.47, )"
             }
           },
           "imports": [

@@ -10,7 +10,11 @@
         "dependencies": {
           "SharpVectors": "1.8.3",
           "SharpVectors.Reloaded": "1.8.3",
-          "SharpVectors.Wpf": "1.8.3"
+          "SharpVectors.Wpf": "1.8.3",
+          "Syncfusion.SfInput.WPF": "24.1.47",
+          "Syncfusion.SfSkinManager.WPF": "24.1.47",
+          "Syncfusion.Shared.WPF": "24.1.47",
+          "Syncfusion.Themes.Windows11Dark.WPF": "24.1.47"
         },
         "runtime": {
           "SearchableComboBox.dll": {}
@@ -53,7 +57,61 @@
         }
       },
       "SharpVectors.Reloaded/1.8.3": {},
-      "SharpVectors.Wpf/1.8.3": {}
+      "SharpVectors.Wpf/1.8.3": {},
+      "Syncfusion.Licensing/24.1.47": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "24.1.47.0",
+            "fileVersion": "24.1.47.0"
+          }
+        }
+      },
+      "Syncfusion.SfInput.WPF/24.1.47": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47",
+          "Syncfusion.Shared.WPF": "24.1.47"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "assemblyVersion": "24.1.47.0",
+            "fileVersion": "24.1.47.0"
+          }
+        }
+      },
+      "Syncfusion.SfSkinManager.WPF/24.1.47": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "assemblyVersion": "24.1.47.0",
+            "fileVersion": "24.1.47.0"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/24.1.47": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "24.1.47.0",
+            "fileVersion": "24.1.47.0"
+          }
+        }
+      },
+      "Syncfusion.Themes.Windows11Dark.WPF/24.1.47": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.1.47",
+          "Syncfusion.SfSkinManager.WPF": "24.1.47"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Windows11Dark.WPF.dll": {
+            "assemblyVersion": "24.1.47.0",
+            "fileVersion": "24.1.47.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -82,6 +140,41 @@
       "sha512": "sha512-vV7b7mkqPwqj6Z4F9UGTma5lyi7fuRgrdKZM+7WJWcjSNHcHaKnrEeyDebYDrL78sqxv9qRHN2Cw4eUYrnQkqg==",
       "path": "sharpvectors.wpf/1.8.3",
       "hashPath": "sharpvectors.wpf.1.8.3.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/24.1.47": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-umuqKtsQnq//31JrKfQBpPofNZC1pYF5wwcNSf+mCIrf9BC+AP4UgYUtb2ntTlLaDjZsDNSsZdV22QxtNBE63w==",
+      "path": "syncfusion.licensing/24.1.47",
+      "hashPath": "syncfusion.licensing.24.1.47.nupkg.sha512"
+    },
+    "Syncfusion.SfInput.WPF/24.1.47": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GSbLaXzbYtx8srItmyeSIDOsMKhfR8dav848rkps6ifDIwdaul9BmbK8hUGIW/UCoksTIx4Pi+O7lOQVMA5ajw==",
+      "path": "syncfusion.sfinput.wpf/24.1.47",
+      "hashPath": "syncfusion.sfinput.wpf.24.1.47.nupkg.sha512"
+    },
+    "Syncfusion.SfSkinManager.WPF/24.1.47": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wnsZ8LgDJ3MXRS13V3EXXIqyGI6N4KGsAp9tN7HTkTxySIPEKcS6m0JrEW81gOPYykLDk4FjaoI+TKOyanTCVA==",
+      "path": "syncfusion.sfskinmanager.wpf/24.1.47",
+      "hashPath": "syncfusion.sfskinmanager.wpf.24.1.47.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/24.1.47": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-58il67XMcN9uYghOuXEle/OQL3y/6sV84XmpwQSpbpDwBFiFart0AluGPTp8yXlTJzmgFehVp3TlGxrVdB0VTw==",
+      "path": "syncfusion.shared.wpf/24.1.47",
+      "hashPath": "syncfusion.shared.wpf.24.1.47.nupkg.sha512"
+    },
+    "Syncfusion.Themes.Windows11Dark.WPF/24.1.47": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wsWyzyz7Aj4L0T9PrrXqMPxO3Tr2+7ve6mXpI20u9Rcj1sTUR6eTH9YsGU0Wivc4yEf5dkpo8E6pqnQUNutrQg==",
+      "path": "syncfusion.themes.windows11dark.wpf/24.1.47",
+      "hashPath": "syncfusion.themes.windows11dark.wpf.24.1.47.nupkg.sha512"
     }
   }
 }
